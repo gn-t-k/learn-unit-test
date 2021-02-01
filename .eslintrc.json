@@ -19,7 +19,7 @@
     "project": "./tsconfig.eslint.json",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "import"],
+  "plugins": ["@typescript-eslint", "import", "jest"],
   "rules": {
     "padding-line-between-statements": [
       "error",
@@ -46,7 +46,9 @@
         "js": "never",
         "ts": "never"
       }
-    ]
+    ],
+    "camelcase": 0,
+    "import/prefer-default-export": 0
   },
   "settings": {
     "import/resolver": {
